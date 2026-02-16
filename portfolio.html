@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore CRENOVA STUDIO's portfolio - Web Development, Mobile Apps, Social Media Management, Graphic Design, Printing, Branding, and Signage Services in Nigeria.">
+    <meta name="keywords" content="portfolio, web development, mobile apps, graphic design, printing, branding, signage, Nigeria">
+    <meta name="author" content="CRENOVA STUDIO">
+    <title>Our Portfolio | CRENOVA STUDIO</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/crenova-logo.png" alt="CRENOVA STUDIO">
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1>Our <span class="highlight">Portfolio</span></h1>
+                    <p>Discover our creative excellence through projects that have transformed brands across Nigeria and beyond.</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio-grid" class="btn btn-primary">View Our Work</a>
+                        <a href="contact.html" class="btn btn-outline">Start Your Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="portfolio-stats section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter-section section-padding bg-light" id="portfolio-grid">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore our diverse range of creative work across multiple industries</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="filter-btn" data-filter="branding">Branding & Design</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="printing">Printing</button>
+                <button class="filter-btn" data-filter="signage">Signage</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Project 1 - Web Development -->
+                <article class="portfolio-project" data-category="web" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="assets/images/website1.png" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Naija Marketplace</h3>
+                                <p>E-commerce Platform Development</p>
+                                <div class="project-tags">
+                                    <span>Web Development</span>
+                                    <span>E-commerce</span>
+                                    <span>Payment Integration</span>
+                                </div>
+                            </div>
+                            <a href="#project-1" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Web Development</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 - Mobile App -->
+                <article class="portfolio-project" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Mobile Banking App">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>QuickPay Mobile App</h3>
+                                <p>Mobile Banking Solution</p>
+                                <div class="project-tags">
+                                    <span>iOS & Android</span>
+                                    <span>FinTech</span>
+                                    <span>UI/UX Design</span>
+                                </div>
+                            </div>
+                            <a href="#project-2" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Mobile Apps</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 3 - Branding -->
+                <article class="portfolio-project" data-category="branding" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Brand Identity">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>TechStart Nigeria</h3>
+                                <p>Complete Brand Identity Package</p>
+                                <div class="project-tags">
+                                    <span>Logo Design</span>
+                                    <span>Brand Guidelines</span>
+                                    <span>Business Cards</span>
+                                </div>
+                            </div>
+                            <a href="#project-3" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Branding</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 - Social Media -->
+                <article class="portfolio-project" data-category="social" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80" alt="Social Media Campaign">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Fashion Brand Campaign</h3>
+                                <p>Social Media Management & Content</p>
+                                <div class="project-tags">
+                                    <span>Instagram</span>
+                                    <span>Facebook</span>
+                                    <span>Content Creation</span>
+                                </div>
+                            </div>
+                            <a href="#project-4" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Social Media</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 5 - Graphic Design -->
+                <article class="portfolio-project" data-category="branding" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&q=80" alt="Graphic Design">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Restaurant Menu Design</h3>
+                                <p>Professional Menu & Marketing Materials</p>
+                                <div class="project-tags">
+                                    <span>Graphic Design</span>
+                                    <span>Print Design</span>
+                                    <span>Photography</span>
+                                </div>
+                            </div>
+                            <a href="#project-5" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Graphic Design</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 6 - Printing -->
+                <article class="portfolio-project" data-category="printing" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=800&q=80" alt="Print Materials">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Corporate Brochures</h3>
+                                <p>High-Quality Print Production</p>
+                                <div class="project-tags">
+                                    <span>Brochure Design</span>
+                                    <span>Premium Printing</span>
+                                    <span>Finishing</span>
+                                </div>
+                            </div>
+                            <a href="#project-6" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Printing</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 7 - Indoor Signage -->
+                <article class="portfolio-project" data-category="signage" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Indoor Signage">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Office Wayfinding System</h3>
+                                <p>Indoor Directional Signage</p>
+                                <div class="project-tags">
+                                    <span>Indoor Signage</span>
+                                    <span>Wayfinding</span>
+                                    <span>Installation</span>
+                                </div>
+                            </div>
+                            <a href="#project-7" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Indoor Signage</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2023</span>
+                    </div>
+                </article>
+
+                <!-- Project 8 - Outdoor Signage -->
+                <article class="portfolio-project" data-category="signage" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&q=80" alt="Outdoor Signage">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Storefront LED Sign</h3>
+                                <p>Illuminated Outdoor Signage</p>
+                                <div class="project-tags">
+                                    <span>Outdoor Signage</span>
+                                    <span>LED Lighting</span>
+                                    <span>Installation</span>
+                                </div>
+                            </div>
+                            <a href="#project-8" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Outdoor Signage</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 9 - Website Management -->
+                <article class="portfolio-project" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Website Management">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Corporate Website Maintenance</h3>
+                                <p>Ongoing Website Management & Updates</p>
+                                <div class="project-tags">
+                                    <span>Website Management</span>
+                                    <span>Security Updates</span>
+                                    <span>Content Updates</span>
+                                </div>
+                            </div>
+                            <a href="#project-9" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Website Management</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 10 - Mobile App -->
+                <article class="portfolio-project" data-category="mobile" data-aos="fade-up">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="Delivery App">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Food Delivery App</h3>
+                                <p>iOS & Android Mobile Application</p>
+                                <div class="project-tags">
+                                    <span>Mobile Development</span>
+                                    <span>GPS Integration</span>
+                                    <span>Real-time Tracking</span>
+                                </div>
+                            </div>
+                            <a href="#project-10" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Mobile Apps</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2023</span>
+                    </div>
+                </article>
+
+                <!-- Project 11 - Branding & Printing -->
+                <article class="portfolio-project" data-category="printing" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?w=800&q=80" alt="Business Cards">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Premium Business Cards</h3>
+                                <p>Luxury Print with Special Finishes</p>
+                                <div class="project-tags">
+                                    <span>Design</span>
+                                    <span>Foil Stamping</span>
+                                    <span>Embossing</span>
+                                </div>
+                            </div>
+                            <a href="#project-11" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Printing</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+                    </div>
+                </article>
+
+                <!-- Project 12 - Web Development -->
+                <article class="portfolio-project" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Creative Agency Website</h3>
+                                <p>Custom WordPress Development</p>
+                                <div class="project-tags">
+                                    <span>WordPress</span>
+                                    <span>Custom Theme</span>
+                                    <span>SEO Optimized</span>
+                                </div>
+                            </div>
+                            <a href="#project-12" class="project-link">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-meta">
+                        <span class="project-category"><i class="fas fa-tag"></i> Web Development</span>
+                        <span class="project-date"><i class="fas fa-calendar"></i> 2023</span>
+                    </div>
+                </article>
+
+                <!-- New Printing Project -->
+<article class="portfolio-project" data-category="printing" data-aos="fade-up">
+    <div class="project-image">
+        <img src="https://images.unsplash.com/photo-1499159058454-75067059248a?w=800&q=80" alt="Magazine Printing">
+        <div class="project-overlay">
+            <div class="project-info">
+                <h3>Fashion Magazine</h3>
+                <p>High-End Magazine Printing & Distribution</p>
+                <div class="project-tags">
+                    <span>Magazine Design</span>
+                    <span>Offset Printing</span>
+                    <span>Glossy Finish</span>
+                </div>
+            </div>
+            <a href="#project-new" class="project-link">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="project-meta">
+        <span class="project-category"><i class="fas fa-tag"></i> Printing</span>
+        <span class="project-date"><i class="fas fa-calendar"></i> 2024</span>
+    </div>
+</article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="btn btn-primary load-more-btn" id="loadMoreBtn">
+                    Load More Projects <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Case Study</h2>
+                <p class="section-subtitle">Deep dive into our most successful project transformation</p>
+            </div>
+
+            <div class="case-study-content">
+                <div class="case-study-hero" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80" alt="Case Study Hero">
+                </div>
+
+                <div class="case-study-details">
+                    <div class="case-study-grid">
+                        <div class="case-detail" data-aos="fade-right">
+                            <h3>The Challenge</h3>
+                            <p>A growing Nigerian retail chain needed a complete digital transformation—from outdated website to modern e-commerce platform with mobile apps and comprehensive branding.</p>
+                        </div>
+
+                        <div class="case-detail" data-aos="fade-left" data-aos-delay="100">
+                            <h3>Our Solution</h3>
+                            <p>We delivered a full-stack solution: responsive e-commerce website, iOS/Android apps, complete rebranding, social media strategy, and both indoor/outdoor signage for 15 store locations.</p>
+                        </div>
+
+                        <div class="case-detail" data-aos="fade-right" data-aos-delay="200">
+                            <h3>The Results</h3>
+                            <ul class="results-list">
+                                <li><i class="fas fa-check-circle"></i> 400% increase in online sales</li>
+                                <li><i class="fas fa-check-circle"></i> 50,000+ mobile app downloads</li>
+                                <li><i class="fas fa-check-circle"></i> 250% social media engagement boost</li>
+                                <li><i class="fas fa-check-circle"></i> Expanded to 15 locations nationwide</li>
+                            </ul>
+                        </div>
+
+                        <div class="case-detail" data-aos="fade-left" data-aos-delay="300">
+                            <h3>Client Testimonial</h3>
+                            <blockquote>
+                                "CRENOVA STUDIO transformed our entire business. From our website to our mobile apps, branding, and store signage—everything is now professional and cohesive. Our sales have quadrupled!"
+                                <cite>— Adebayo Johnson, CEO Retail Chain</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services We Offer -->
+    <section class="services-offered section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for all your creative and digital needs</p>
+            </div>
+
+            <div class="services-grid-portfolio">
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-box-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom websites, e-commerce platforms, and web applications</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-box-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>iOS and Android native and cross-platform applications</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-box-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Management</h3>
+                    <p>Content creation, posting, engagement, and growth strategies</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-box-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Website Management</h3>
+                    <p>Ongoing maintenance, updates, security, and optimization</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-box-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Logos, flyers, posters, banners, and marketing materials</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-box-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Printing Services</h3>
+                    <p>Business cards, brochures, banners, and promotional materials</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-box-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Branding</h3>
+                    <p>Complete brand identity packages and brand strategy</p>
+                </div>
+
+                <div class="service-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-box-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Indoor & Outdoor Signage</h3>
+                    <p>Storefront signs, wayfinding, LED signs, and custom installations</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="clients-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Trusted by Leading Brands</h2>
+                <p class="section-subtitle">We've had the privilege of working with amazing clients across Nigeria</p>
+            </div>
+
+            <div class="clients-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/200x100/0a3d62/ffffff?text=Client+1" alt="Client Logo">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/200x100/0a3d62/ffffff?text=Client+2" alt="Client Logo">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/200x100/0a3d62/ffffff?text=Client+3" alt="Client Logo">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/200x100/0a3d62/ffffff?text=Client+4" alt="Client Logo">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/200x100/0a3d62/ffffff?text=Client+5" alt="Client Logo">
+                </div>
+                <div class="client-logo">
+                    <img src="https://via.placeholder.com/200x100/0a3d62/ffffff?text=Client+6" alt="Client Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Create Something Amazing?</h2>
+                <p>Let's bring your vision to life. Join our portfolio of successful projects and transform your brand today.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                    <a href="services.html" class="btn btn-outline">View Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/crenova-logo.png" alt="CRENOVA STUDIO">
+                    </div>
+                    <p class="footer-description">A leading creative studio in Nigeria, delivering innovative design and digital solutions that drive business growth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Brand Identity</a></li>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Video Production</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                        <li><i class="fas fa-phone"></i> +234 XXX XXX XXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@crenovastudio.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CRENOVA STUDIO. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a class="whatsapp-float" href="https://wa.me/2349048239391" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us now</span>
+    </a>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Portfolio Image Lightbox -->
+    <div class="portfolio-lightbox" id="portfolioLightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="portfolio-lightbox-close" id="portfolioLightboxClose" aria-label="Close image">
+            <i class="fas fa-times"></i>
+        </button>
+        <img class="portfolio-lightbox-image" id="portfolioLightboxImage" alt="">
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

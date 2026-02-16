@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CRENOVA STUDIO - A leading creative business in Nigeria offering innovative design, branding, and digital solutions.">
+    <meta name="keywords" content="creative studio, design agency, Nigeria, branding, digital marketing, web design">
+    <meta name="author" content="CRENOVA STUDIO">
+    <title>CRENOVA STUDIO | Creative Excellence in Nigeria</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/crenova-logo.png" alt="CRENOVA STUDIO">
+                </a>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel" id="home">
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Creative Excellence<br><span class="highlight">Made in Nigeria</span></h1>
+                        <p class="slide-text">We bring your boldest ideas to life with innovative design and cutting-edge digital solutions.</p>
+                        <div class="slide-buttons">
+                            <a href="services.html" class="btn btn-primary">Explore Services</a>
+                            <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Transform Your<br><span class="highlight">Brand Story</span></h1>
+                        <p class="slide-text">Strategic branding and design that resonates with your audience and drives results.</p>
+                        <div class="slide-buttons">
+                            <a href="services.html" class="btn btn-primary">Get Started</a>
+                            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&q=80');">
+                    <div class="slide-overlay"></div>
+                </div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Digital Solutions<br><span class="highlight">For Modern Business</span></h1>
+                        <p class="slide-text">From web design to digital marketing, we deliver solutions that elevate your business.</p>
+                        <div class="slide-buttons">
+                            <a href="portfolio.html" class="btn btn-primary">See Our Work</a>
+                            <a href="about.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control prev" aria-label="Previous slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control next" aria-label="Next slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-preview section-padding" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive creative solutions tailored to your needs</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Brand Identity</h3>
+                    <p>Create memorable brand identities that capture your essence and connect with your audience.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Beautiful, responsive websites that deliver exceptional user experiences across all devices.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Graphics Design </h3>
+                    <p>Strategic campaigns that amplify your message and drive measurable business growth.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Production</h3>
+                    <p>Compelling video content that tells your story and engages your target audience.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Indoor and Outdoor Signage</h3>
+                    <p>Professional signage design and installation services for indoor and outdoor environments.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Custom mobile applications for iOS and Android that deliver seamless user experiences.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <!-- Image Slideshow Section -->
+<section class="image-slideshow-section section-padding bg-light">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Our Work in Action</h2>
+            <p class="section-subtitle">See the quality and diversity of our creative solutions</p>
+        </div>
+
+        <div class="slideshow-container" data-aos="fade-up" data-aos-delay="100">
+            <!-- Slide 1 - Website UI -->
+            <div class="slideshow-slide active">
+                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1200&q=80" alt="Website Homepage Design" loading="lazy">
+                <div class="slide-caption">
+                    <h3>E-commerce Website Design</h3>
+                    <p>Modern & Responsive</p>
+                </div>
+            </div>
+
+            <!-- Slide 2 - iPhone App -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1200&q=80" alt="iPhone Mobile App" loading="lazy">
+                <div class="slide-caption">
+                    <h3>iOS Mobile Application</h3>
+                    <p>Sleek & User-Friendly</p>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Android App -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&q=80" alt="Android Mobile App" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Android App Development</h3>
+                    <p>Fast & Reliable</p>
+                </div>
+            </div>
+
+            <!-- Slide 4 - Web Dashboard -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80" alt="Web Dashboard UI" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Business Dashboard</h3>
+                    <p>Data-Driven Design</p>
+                </div>
+            </div>
+
+            <!-- Slide 5 - Printing Press -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=1200&q=80" alt="Printing Machine" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Professional Printing</h3>
+                    <p>High-Quality Output</p>
+                </div>
+            </div>
+
+            <!-- Slide 6 - Design Workspace -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1200&q=80" alt="Graphic Design Work" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Graphic Design Studio</h3>
+                    <p>Creative Excellence</p>
+                </div>
+            </div>
+
+            <!-- Slide 7 - Branding Materials -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?w=1200&q=80" alt="Branding Materials" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Brand Identity Package</h3>
+                    <p>Complete Branding Solution</p>
+                </div>
+            </div>
+
+            <!-- Slide 8 - Signage -->
+            <div class="slideshow-slide">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80" alt="Indoor Signage" loading="lazy">
+                <div class="slide-caption">
+                    <h3>Custom Signage Design</h3>
+                    <p>Indoor & Outdoor Solutions</p>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="slideshow-prev" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slideshow-next" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Slide Indicators -->
+            <div class="slideshow-indicators">
+                <span class="indicator-dot active" data-slide-index="0"></span>
+                <span class="indicator-dot" data-slide-index="1"></span>
+                <span class="indicator-dot" data-slide-index="2"></span>
+                <span class="indicator-dot" data-slide-index="3"></span>
+                <span class="indicator-dot" data-slide-index="4"></span>
+                <span class="indicator-dot" data-slide-index="5"></span>
+                <span class="indicator-dot" data-slide-index="6"></span>
+                <span class="indicator-dot" data-slide-index="7"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Recent Works Section -->
+<section class="recent-works section-padding">
+    <div class="container">
+
+        <div class="works-header" data-aos="fade-up">
+            <span class="works-label">RECENT WORKS</span>
+            <h2 class="works-title">
+                We love what we do, check out <br>
+                some of our latest works
+            </h2>
+            <div class="works-divider"></div>
+        </div>
+
+        <div class="works-grid">
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/images/website1.png" alt="Project 1" class="clickable-image">
+                <div class="work-overlay">
+                    <h3>E-commerce Website</h3>
+                    <p>Modern online store design</p>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/website1.png" alt="Project 2" class="clickable-image">
+                <div class="work-overlay">
+                    <h3>Beauty Brand Website</h3>
+                    <p>Custom UI/UX development</p>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/website1.png" alt="Project 3" class="clickable-image">
+                <div class="work-overlay">
+                    <h3>Corporate Platform</h3>
+                    <p>Professional business solution</p>
+                </div>
+            </div>
+
+            <div class="work-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/website1.png" alt="Project " class="clickable-image">
+                <div class="work-overlay">
+                    <h3>Logistics Dashboard</h3>
+                    <p>Custom web application</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- Statistics Section -->
+    <section class="stats-section section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number" data-target="250">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="8">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- Testimonial Section -->
+<section class="testimonial-section section-padding">
+    <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+            <span class="testimonial-label">TESTIMONIALS</span>
+            <h2 class="testimonial-title">
+                What Our Clients Say About Us
+            </h2>
+        </div>
+
+        <div class="testimonial-slider">
+    <div class="testimonial-track">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                <div>
+                    <h4>Michael A.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Crenova Studio delivered our website before deadline. The design and performance exceeded expectations."</p>
+            <span>Business Owner</span>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                <div>
+                    <h4>Sandra K.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Very professional team. They handled our branding and printing perfectly with zero delays."</p>
+            <span>Brand Manager</span>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client">
+                <div>
+                    <h4>David O.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Our mobile app was developed smoothly and delivered exactly on time. Highly recommend."</p>
+            <span>Startup Founder</span>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client">
+                <div>
+                    <h4>Chioma E.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Affordable pricing and premium quality. The signage project was completed flawlessly."</p>
+            <span>Entrepreneur</span>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Client">
+                <div>
+                    <h4>Ibrahim T.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"They keep to their word. Fast delivery, excellent communication, outstanding results."</p>
+            <span>Corporate Client</span>
+        </div>
+
+        <!-- Duplicate the same 5 again for seamless loop -->
+        <!-- (Copy the 5 again exactly as above for continuous effect) -->
+ <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                <div>
+                    <h4>Michael A.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Crenova Studio delivered our website before deadline. The design and performance exceeded expectations."</p>
+            <span>Business Owner</span>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                <div>
+                    <h4>Sandra K.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Very professional team. They handled our branding and printing perfectly with zero delays."</p>
+            <span>Brand Manager</span>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client">
+                <div>
+                    <h4>David O.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Our mobile app was developed smoothly and delivered exactly on time. Highly recommend."</p>
+            <span>Startup Founder</span>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client">
+                <div>
+                    <h4>Chioma E.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"Affordable pricing and premium quality. The signage project was completed flawlessly."</p>
+            <span>Entrepreneur</span>
+        </div>
+
+        <!-- Testimonial 5 -->
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Client">
+                <div>
+                    <h4>Ibrahim T.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <p>"They keep to their word. Fast delivery, excellent communication, outstanding results."</p>
+            <span>Corporate Client</span>
+        </div>
+
+
+    </div>
+</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+    <!-- Blog Preview Section -->
+    <!-- Blog Section -->
+    <section class="blog-section section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Latest from Our Blog</h2>
+                <p class="section-subtitle">Insights, tips, and trends to help your business grow</p>
+            </div>
+
+            <div class="blog-grid-home">
+                <!-- Blog Article 1 -->
+                <article class="blog-card-home" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image-home">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Web Development Trends">
+                        <div class="blog-badge-home">Web Development</div>
+                    </div>
+                    <div class="blog-content-home">
+                        <div class="blog-meta-home">
+                            <span><i class="fas fa-calendar"></i> January 15, 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3 class="blog-title-home">Top 10 Web Development Trends to Watch in 2024</h3>
+                        <p class="blog-excerpt-home">Discover the latest trends shaping the future of web development, from AI integration to progressive web apps and more...</p>
+                        <a href="blog.html" class="blog-link-home">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Article 2 -->
+                <article class="blog-card-home" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image-home">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Mobile App Design">
+                        <div class="blog-badge-home">Mobile Apps</div>
+                    </div>
+                    <div class="blog-content-home">
+                        <div class="blog-meta-home">
+                            <span><i class="fas fa-calendar"></i> January 10, 2024</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h3 class="blog-title-home">Essential UI/UX Principles for Mobile App Success</h3>
+                        <p class="blog-excerpt-home">Learn the fundamental design principles that make mobile apps intuitive, engaging, and successful in today's competitive market...</p>
+                        <a href="blog.html" class="blog-link-home">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Article 3 -->
+                <article class="blog-card-home" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image-home">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Brand Identity Design">
+                        <div class="blog-badge-home">Design Tips</div>
+                    </div>
+                    <div class="blog-content-home">
+                        <div class="blog-meta-home">
+                            <span><i class="fas fa-calendar"></i> January 5, 2024</span>
+                            <span><i class="fas fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3 class="blog-title-home">Creating a Strong Visual Identity for Nigerian Brands</h3>
+                        <p class="blog-excerpt-home">A comprehensive guide to building a memorable brand identity that resonates with the Nigerian market and stands out globally...</p>
+                        <a href="blog.html" class="blog-link-home">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Article 4 -->
+                <article class="blog-card-home" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image-home">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=800&q=80" alt="Social Media Marketing">
+                        <div class="blog-badge-home">Marketing</div>
+                    </div>
+                    <div class="blog-content-home">
+                        <div class="blog-meta-home">
+                            <span><i class="fas fa-calendar"></i> December 28, 2023</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3 class="blog-title-home">Social Media Marketing Strategies for Nigerian Businesses</h3>
+                        <p class="blog-excerpt-home">Master social media marketing with proven strategies tailored for the Nigerian market. Learn how to grow your audience and boost engagement...</p>
+                        <a href="blog.html" class="blog-link-home">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center" style="margin-top: 3rem;" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-primary">
+                    View All Articles <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Start Your Next Project?</h2>
+                <p>Let's collaborate and create something amazing together. Get in touch with us today!</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                    <a href="tel:+234" class="btn btn-outline">Call Us Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/images/crenova-logo.png" alt="CRENOVA STUDIO">
+                    </div>
+                    <p class="footer-description">A leading creative studio in Nigeria, delivering innovative design and digital solutions that drive business growth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Brand Identity</a></li>
+                        <li><a href="services.html">Web Design</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Video Production</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos, Nigeria</li>
+                        <li><i class="fas fa-phone"></i> +234 XXX XXX XXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@crenovastudio.com</li>
+                        <li><i class="fas fa-clock"></i> Mon - Fri: 9AM - 6PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CRENOVA STUDIO. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a class="whatsapp-float" href="https://wa.me/2349048239391" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us now</span>
+    </a>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Image Lightbox Modal -->
+<div class="image-lightbox" id="imageLightbox">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-content" id="lightboxImage">
+</div>
+
+<script>
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImg = document.getElementById("lightboxImage");
+    const closeBtn = document.getElementById("lightboxClose");
+
+    document.querySelectorAll(".clickable-image").forEach(image => {
+        image.addEventListener("click", function () {
+            lightbox.style.display = "block";
+            lightboxImg.src = this.src;
+        });
+    });
+
+    closeBtn.onclick = function () {
+        lightbox.style.display = "none";
+    };
+
+    lightbox.onclick = function (e) {
+        if (e.target === lightbox) {
+            lightbox.style.display = "none";
+        }
+    };
+</script>
+
+
+</body>
+</html>
