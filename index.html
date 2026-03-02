@@ -51,70 +51,239 @@
 
     <!-- Hero Carousel -->
     <section class="hero-carousel" id="home">
-        <div class="carousel-container">
-            <!-- Slide 1 -->
-            <div class="carousel-slide active">
-                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80');">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="slide-content">
-                        <h1 class="slide-title">Creative Excellence<br><span class="highlight">Made in Nigeria</span></h1>
-                        <p class="slide-text">We bring your boldest ideas to life with innovative design and cutting-edge digital solutions.</p>
-                        <div class="slide-buttons">
-                            <a href="services.html" class="btn btn-primary">Explore Services</a>
-                            <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
-                        </div>
-                    </div>
+        <div class="hero-shell">
+            <div class="hero-heading" data-aos="fade-up">
+                <p class="hero-kicker">Crenova Studio · Media & Technology</p>
+                <h1>Bold digital and physical experiences engineered to move your brand.</h1>
+                <p class="hero-subtext">We combine web, mobile, software, social, and signage expertise so every touchpoint feels cohesive and premium.</p>
+                <div class="hero-meta">
+                    <span>Based in Lagos · Serving global clients</span>
+                    <span>Design · Build · Manage · Illuminate</span>
                 </div>
             </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=1920&q=80');">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="slide-content">
-                        <h1 class="slide-title">Transform Your<br><span class="highlight">Brand Story</span></h1>
-                        <p class="slide-text">Strategic branding and design that resonates with your audience and drives results.</p>
-                        <div class="slide-buttons">
-                            <a href="services.html" class="btn btn-primary">Get Started</a>
-                            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide active" data-service="web">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, rgba(6, 17, 32, 0.9), rgba(25, 150, 231, 0.65)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80');"></div>
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <div class="slide-copy">
+                                    <span class="slide-kicker">Web Development</span>
+                                    <h2>Architecting lightning-fast websites that convert.</h2>
+                                    <p>From landing pages to multi-location platforms, we engineer accessible, analytics-ready sites with enterprise stability and local insight.</p>
+                                    <div class="slide-buttons">
+                                        <a href="services.html" class="btn btn-primary">Plan a site</a>
+                                        <a href="portfolio.html" class="btn btn-outline">See case studies</a>
+                                    </div>
+                                    <div class="service-stack">
+                                        <span>Web Development</span>
+                                        <span>Mobile App Development</span>
+                                        <span>Software Development</span>
+                                        <span>Social Media Management</span>
+                                        <span>Indoor & Outdoor Signage</span>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="glass-card glass-card-top">
+                                        <strong>Performance</strong>
+                                        <p>W3C + Lighthouse friendly.</p>
+                                    </div>
+                                    <div class="glass-card glass-card-bottom">
+                                        <strong>Experience</strong>
+                                        <p>3-layer design system logic.</p>
+                                    </div>
+                                    <div class="slide-orb">
+                                        <span>24ms</span>
+                                        <p>TTFB</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide" data-service="mobile">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, rgba(12, 12, 24, 0.9), rgba(255, 138, 101, 0.6)), url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1920&q=80');"></div>
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <div class="slide-copy">
+                                    <span class="slide-kicker">Mobile App Development</span>
+                                    <h2>Native-feeling apps for every screen.</h2>
+                                    <p>We design fluid mobile journeys with offline-ready data syncing, push campaign hooks, and delightfully simple interactions.</p>
+                                    <div class="slide-buttons">
+                                        <a href="services.html" class="btn btn-primary">Book a sprint</a>
+                                        <a href="contact.html" class="btn btn-outline">Talk strategy</a>
+                                    </div>
+                                    <div class="service-stack">
+                                        <span>Web Development</span>
+                                        <span>Mobile App Development</span>
+                                        <span>Software Development</span>
+                                        <span>Social Media Management</span>
+                                        <span>Indoor & Outdoor Signage</span>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="glass-card glass-card-top">
+                                        <strong>UX Toolkit</strong>
+                                        <p>Touch-first prototypes.</p>
+                                    </div>
+                                    <div class="glass-card glass-card-bottom">
+                                        <strong>Deploy Ready</strong>
+                                        <p>App store quality checks.</p>
+                                    </div>
+                                    <div class="slide-orb">
+                                        <span>3×</span>
+                                        <p>User retention</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide" data-service="software">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, rgba(9, 27, 47, 0.9), rgba(123, 31, 162, 0.65)), url('https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1920&q=80');"></div>
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <div class="slide-copy">
+                                    <span class="slide-kicker">Software Development</span>
+                                    <h2>Custom systems that orchestrate every department.</h2>
+                                    <p>We build APIs, internal portals, and automation layers so your teams can move faster without sacrificing control.</p>
+                                    <div class="slide-buttons">
+                                        <a href="services.html" class="btn btn-primary">Outline a stack</a>
+                                        <a href="portfolio.html" class="btn btn-outline">View platform work</a>
+                                    </div>
+                                    <div class="service-stack">
+                                        <span>Web Development</span>
+                                        <span>Mobile App Development</span>
+                                        <span>Software Development</span>
+                                        <span>Social Media Management</span>
+                                        <span>Indoor & Outdoor Signage</span>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="glass-card glass-card-top">
+                                        <strong>Automation</strong>
+                                        <p>Scheduled jobs, alerts.</p>
+                                    </div>
+                                    <div class="glass-card glass-card-bottom">
+                                        <strong>Security</strong>
+                                        <p>Zero-trust baseline.</p>
+                                    </div>
+                                    <div class="slide-orb">
+                                        <span>99.98%</span>
+                                        <p>Uptime</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="carousel-slide" data-service="social">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, rgba(4, 11, 26, 0.9), rgba(255, 193, 7, 0.65)), url('https://images.unsplash.com/photo-1487014679447-9f8336841d58?w=1920&q=80');"></div>
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <div class="slide-copy">
+                                    <span class="slide-kicker">Social Media Manager</span>
+                                    <h2>Content, communities, and campaigns that feel effortless.</h2>
+                                    <p>We plan, publish, and engage with culture-ready content so your brand stays top-of-mind across feeds and stories.</p>
+                                    <div class="slide-buttons">
+                                        <a href="services.html" class="btn btn-primary">Schedule a session</a>
+                                        <a href="contact.html" class="btn btn-outline">See our calendar</a>
+                                    </div>
+                                    <div class="service-stack">
+                                        <span>Web Development</span>
+                                        <span>Mobile App Development</span>
+                                        <span>Software Development</span>
+                                        <span>Social Media Management</span>
+                                        <span>Indoor & Outdoor Signage</span>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="glass-card glass-card-top">
+                                        <strong>Editorial</strong>
+                                        <p>Stories that launch.</p>
+                                    </div>
+                                    <div class="glass-card glass-card-bottom">
+                                        <strong>Momentum</strong>
+                                        <p>Daily listening loops.</p>
+                                    </div>
+                                    <div class="slide-orb">
+                                        <span>+48%</span>
+                                        <p>Engagement</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="carousel-slide" data-service="signage">
+                        <div class="slide-background" style="background-image: linear-gradient(135deg, rgba(5, 12, 20, 0.95), rgba(3, 218, 198, 0.5)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1920&q=80');"></div>
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <div class="slide-copy">
+                                    <span class="slide-kicker">Indoor & Outdoor Signage</span>
+                                    <h2>Show-stopping signage that anchors every location.</h2>
+                                    <p>We craft illuminated, wayfinding, and brand-messaging systems that look intentional day and night.</p>
+                                    <div class="slide-buttons">
+                                        <a href="services.html" class="btn btn-primary">Request mockups</a>
+                                        <a href="portfolio.html" class="btn btn-outline">Explore installs</a>
+                                    </div>
+                                    <div class="service-stack">
+                                        <span>Web Development</span>
+                                        <span>Mobile App Development</span>
+                                        <span>Software Development</span>
+                                        <span>Social Media Management</span>
+                                        <span>Indoor & Outdoor Signage</span>
+                                    </div>
+                                </div>
+                                <div class="slide-visual">
+                                    <div class="glass-card glass-card-top">
+                                        <strong>Fabrication</strong>
+                                        <p>Durable materials.</p>
+                                    </div>
+                                    <div class="glass-card glass-card-bottom">
+                                        <strong>Installation</strong>
+                                        <p>On-site precision.</p>
+                                    </div>
+                                    <div class="slide-orb">
+                                        <span>24/7</span>
+                                        <p>Visibility</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-                <div class="slide-background" style="background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&q=80');">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="container">
-                    <div class="slide-content">
-                        <h1 class="slide-title">Digital Solutions<br><span class="highlight">For Modern Business</span></h1>
-                        <p class="slide-text">From web design to digital marketing, we deliver solutions that elevate your business.</p>
-                        <div class="slide-buttons">
-                            <a href="portfolio.html" class="btn btn-primary">See Our Work</a>
-                            <a href="about.html" class="btn btn-outline">Learn More</a>
-                        </div>
+                <div class="hero-controls">
+                    <button class="carousel-control prev" aria-label="Previous slide">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                        <button class="indicator" data-slide="4"></button>
                     </div>
+                    <button class="carousel-control next" aria-label="Next slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
-        </div>
 
-        <button class="carousel-control prev" aria-label="Previous slide">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="carousel-control next" aria-label="Next slide">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-
-        <div class="carousel-indicators">
-            <button class="indicator active" data-slide="0"></button>
-            <button class="indicator" data-slide="1"></button>
-            <button class="indicator" data-slide="2"></button>
+            <div class="hero-glow hero-glow-left"></div>
+            <div class="hero-glow hero-glow-right"></div>
         </div>
     </section>
 
@@ -318,7 +487,7 @@
             </div>
 
             <div class="work-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/images/website1.png" alt="Project 2" class="clickable-image">
+                <img src="assets/images/tmdasscreen.png" alt="Project 2" class="clickable-image">
                 <div class="work-overlay">
                     <h3>Beauty Brand Website</h3>
                     <p>Custom UI/UX development</p>
@@ -326,7 +495,7 @@
             </div>
 
             <div class="work-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/images/website1.png" alt="Project 3" class="clickable-image">
+                <img src="assets/images/vgsscreen.png" alt="Project 3" class="clickable-image">
                 <div class="work-overlay">
                     <h3>Corporate Platform</h3>
                     <p>Professional business solution</p>

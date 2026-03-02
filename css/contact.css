@@ -266,8 +266,50 @@
         padding: 120px 0 80px;
     }
 
+    .contact-hero-text h1 {
+        font-size: clamp(1.95rem, 8vw, 2.7rem);
+        line-height: 1.2;
+    }
+
+    .contact-hero-text p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
     .contact-hero-actions .btn {
         width: 100%;
+    }
+
+    .contact-hero-note {
+        font-size: 0.92rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-hero-card {
+        padding: 1.6rem;
+        border-radius: 18px;
+    }
+
+    .hero-card-item i {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-card {
+        padding: 1.2rem;
+    }
+
+    .contact-highlight {
+        padding: 1.2rem;
+    }
+
+    .contact-form-card {
+        padding: 1.5rem;
     }
 
     .form-row {
@@ -276,11 +318,81 @@
 }
 
 @media (max-width: 480px) {
+    .contact-hero {
+        padding: 105px 0 65px;
+    }
+
+    .contact-hero-grid {
+        gap: 1.5rem;
+    }
+
+    .contact-hero-text h1 {
+        font-size: clamp(1.65rem, 9vw, 2.2rem);
+    }
+
+    .contact-hero-text p {
+        font-size: 0.95rem;
+    }
+
     .contact-hero-card {
         padding: 1.5rem;
     }
 
     .contact-form-card {
         padding: 1.5rem;
+    }
+
+    .hero-card-top h3 {
+        font-size: 1.35rem;
+    }
+
+    .hero-card-item {
+        align-items: flex-start;
+    }
+
+    .hero-card-item h4 {
+        font-size: 0.95rem;
+    }
+
+    .hero-card-item p {
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .contact-info p {
+        line-height: 1.65;
+    }
+
+    .info-card {
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .info-card i {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 0.82rem 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .contact-hero-actions {
+        margin-top: 1.4rem;
+    }
+
+    .contact-hero-note {
+        margin-top: 1.3rem;
+    }
+
+    .contact-form-card,
+    .contact-hero-card {
+        padding: 1.1rem;
     }
 }

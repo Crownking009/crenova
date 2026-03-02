@@ -148,8 +148,13 @@
 
 /* Portfolio Hero */
 .portfolio-hero {
-    height: 60vh;
-    min-height: 500px;
+    min-height: clamp(420px, 68vh, 620px);
+    display: flex;
+    align-items: center;
+}
+
+.portfolio-hero .container {
+    width: 100%;
 }
 
 /* Portfolio Stats */
@@ -228,6 +233,9 @@
     cursor: pointer;
     transition: var(--transition);
     font-size: 1rem;
+    max-width: 100%;
+    text-align: center;
+    white-space: normal;
 }
 
 .filter-btn:hover {
@@ -655,8 +663,7 @@ cite {
 
 @media (max-width: 768px) {
     .portfolio-hero {
-        height: 50vh;
-        min-height: 400px;
+        min-height: 0;
     }
 
     .portfolio-stats .stats-grid {
@@ -688,6 +695,24 @@ cite {
         gap: 1.5rem;
     }
 
+    .project-overlay {
+        padding: 1.4rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .project-info p {
+        font-size: 0.92rem;
+        margin-bottom: 0.85rem;
+    }
+
+    .project-meta {
+        flex-wrap: wrap;
+        gap: 0.55rem;
+    }
+
     .case-study-grid {
         grid-template-columns: 1fr;
     }
@@ -708,6 +733,19 @@ cite {
 }
 
 @media (max-width: 480px) {
+    .portfolio-hero {
+        padding: 102px 0 64px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(1.95rem, 9vw, 2.5rem);
+    }
+
+    .hero-text p {
+        font-size: 0.96rem;
+        line-height: 1.65;
+    }
+
     .portfolio-stats .stats-grid {
         grid-template-columns: 1fr;
     }
@@ -719,6 +757,8 @@ cite {
 
     .filter-btn {
         width: 100%;
+        padding: 0.68rem 0.95rem;
+        font-size: 0.88rem;
     }
 
     .project-overlay {
@@ -744,6 +784,12 @@ cite {
         gap: 0.5rem;
     }
 
+    .project-link {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
     .case-detail {
         padding: 1.5rem;
     }
@@ -764,6 +810,24 @@ cite {
         width: 60px;
         height: 60px;
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .project-overlay {
+        padding: 1.05rem;
+    }
+
+    .project-tags span {
+        font-size: 0.7rem;
+    }
+
+    .case-detail {
+        padding: 1.1rem;
     }
 }
 

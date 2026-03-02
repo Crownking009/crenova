@@ -51,73 +51,73 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== HERO CAROUSEL =====
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-slide');
-const indicators = document.querySelectorAll('.indicator');
-const prevBtn = document.querySelector('.carousel-control.prev');
-const nextBtn = document.querySelector('.carousel-control.next');
-let autoplayInterval;
+let heroCurrentSlide = 0;
+const heroSlides = document.querySelectorAll('.carousel-slide');
+const heroIndicators = document.querySelectorAll('.indicator');
+const heroPrevBtn = document.querySelector('.carousel-control.prev');
+const heroNextBtn = document.querySelector('.carousel-control.next');
+let heroAutoplayInterval;
 
 // Show specific slide
-function showSlide(index) {
+function showHeroSlide(index) {
     // Remove active class from all slides and indicators
-    slides.forEach((slide, i) => {
+    heroSlides.forEach((slide, i) => {
         slide.classList.remove('active');
-        if (indicators[i]) {
-            indicators[i].classList.remove('active');
+        if (heroIndicators[i]) {
+            heroIndicators[i].classList.remove('active');
         }
     });
     
     // Calculate the correct index (wrap around)
-    currentSlide = (index + slides.length) % slides.length;
+    heroCurrentSlide = (index + heroSlides.length) % heroSlides.length;
     
     // Add active class to current slide and indicator
-    slides[currentSlide].classList.add('active');
-    if (indicators[currentSlide]) {
-        indicators[currentSlide].classList.add('active');
+    heroSlides[heroCurrentSlide].classList.add('active');
+    if (heroIndicators[heroCurrentSlide]) {
+        heroIndicators[heroCurrentSlide].classList.add('active');
     }
 }
 
 // Next slide
-function nextSlide() {
-    showSlide(currentSlide + 1);
+function nextHeroSlide() {
+    showHeroSlide(heroCurrentSlide + 1);
 }
 
 // Previous slide
-function prevSlide() {
-    showSlide(currentSlide - 1);
+function prevHeroSlide() {
+    showHeroSlide(heroCurrentSlide - 1);
 }
 
 // Auto-play carousel
 function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 5000);
+    heroAutoplayInterval = setInterval(nextHeroSlide, 5000);
 }
 
 function stopAutoplay() {
-    clearInterval(autoplayInterval);
+    clearInterval(heroAutoplayInterval);
 }
 
 // Event listeners for carousel controls
-if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-        prevSlide();
+if (heroPrevBtn) {
+    heroPrevBtn.addEventListener('click', () => {
+        prevHeroSlide();
         stopAutoplay();
         startAutoplay();
     });
 }
 
-if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-        nextSlide();
+if (heroNextBtn) {
+    heroNextBtn.addEventListener('click', () => {
+        nextHeroSlide();
         stopAutoplay();
         startAutoplay();
     });
 }
 
 // Event listeners for indicators
-indicators.forEach((indicator, index) => {
+heroIndicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => {
-        showSlide(index);
+        showHeroSlide(index);
         stopAutoplay();
         startAutoplay();
     });
@@ -145,21 +145,21 @@ function handleSwipe() {
     
     if (touchEndX < touchStartX - swipeThreshold) {
         // Swipe left - next slide
-        nextSlide();
+        nextHeroSlide();
         stopAutoplay();
         startAutoplay();
     }
     
     if (touchEndX > touchStartX + swipeThreshold) {
         // Swipe right - previous slide
-        prevSlide();
+        prevHeroSlide();
         stopAutoplay();
         startAutoplay();
     }
 }
 
 // Start autoplay if carousel exists
-if (slides.length > 0) {
+if (heroSlides.length > 0) {
     startAutoplay();
 }
 
